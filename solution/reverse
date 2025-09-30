@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 str=()
-while read str; do
+while read -r str; do
 	str+=("$str")
 done
 
