@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 name="$@"
-echo "$name"
+
 if [ -d "${name}.unpacked" ]; then
     tar -xvf "$name" -C "${name}.unpacked"
 else 
