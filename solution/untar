@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-name="$@"
+name="$*"
 undir="${name}.unpacked"
 
 if [ ! -d "$undir" ]; then
