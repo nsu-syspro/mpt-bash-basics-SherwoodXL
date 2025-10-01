@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+str=()
+while read -r str; do
+	str+=("$str")
+done
+
+for ((i=${#str[@]}-1; i>0; i--)); do
+	echo "${str[i]}"
+done

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+suf="$1"
+shift
+
+for file in "$@"; do
+    mv "$file" "${file}${suf}" 
+    echo "$file"
+done
